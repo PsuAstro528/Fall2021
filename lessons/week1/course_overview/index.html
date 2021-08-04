@@ -1,4 +1,4 @@
-<!doctype html><html><head><title>PSU Astro 528</title><meta charset=utf-8><meta name=viewport content="width=device-width,initial-scale=1,maximum-scale=1,user-scalable=no"><meta name=revised content="2021-08-03T00:47:21 UTC"><title>Course Overview (slides) :: PSU Astro 528</title><link rel="shortcut icon" href=/images/favicon.png type=image/x-icon><link href=/css/nucleus.css rel=stylesheet><link href=/css/font-awesome.min.css rel=stylesheet><link href=/css/featherlight.min.css rel=stylesheet><link href=/css/auto-complete.css rel=stylesheet><link href=/theme-flex/style.css rel=stylesheet><link href=/theme-flex/variant-blue.css rel=stylesheet><link rel=stylesheet href=/css/bootstrap.min.css><link rel=stylesheet href=/css/theme.css><script type=text/x-mathjax-config>
+<!doctype html><html><head><title>PSU Astro 528</title><meta charset=utf-8><meta name=viewport content="width=device-width,initial-scale=1,maximum-scale=1,user-scalable=no"><meta name=revised content="2021-08-04T00:14:55 UTC"><title>Course Overview (slides) :: PSU Astro 528</title><link rel="shortcut icon" href=/images/favicon.png type=image/x-icon><link href=/css/nucleus.css rel=stylesheet><link href=/css/font-awesome.min.css rel=stylesheet><link href=/css/featherlight.min.css rel=stylesheet><link href=/css/auto-complete.css rel=stylesheet><link href=/theme-flex/style.css rel=stylesheet><link href=/theme-flex/variant-blue.css rel=stylesheet><link rel=stylesheet href=/css/bootstrap.min.css><link rel=stylesheet href=/css/theme.css><script type=text/x-mathjax-config>
     MathJax.Hub.Config({
     tex2jax: {inlineMath: [['$','$'], ['\\(','\\)']]}
     });
@@ -14,7 +14,6 @@
 </a><i class="fa fa-circle-thin read-icon"></i></div></li><li data-nav-id=https://psuastro528.github.io/lessons/week1/read/ class=dd-item><div><a href=/lessons/week1/read/>Readings
 </a><i class="fa fa-circle-thin read-icon"></i></div></li><li data-nav-id=https://psuastro528.github.io/lessons/week1/course_overview/ class=dd-item><div><a href=/lessons/week1/course_overview/>Course Overview (slides)
 </a><i class="fa fa-circle-thin read-icon"></i></div></li><li data-nav-id=https://psuastro528.github.io/lessons/week1/lab/ class=dd-item><div><a href=/lessons/week1/lab/>Exercises
-</a><i class="fa fa-circle-thin read-icon"></i></div></li><li data-nav-id=https://psuastro528.github.io/lessons/week1/discuss/ class=dd-item><div><a href=/lessons/week1/discuss/>Discussion Topics Week 1
 </a><i class="fa fa-circle-thin read-icon"></i></div></li></ul></li><li data-nav-id=https://psuastro528.github.io/lessons/week2/ class="dd-item haschildren"><div><a href=/lessons/week2/>Week 2: Priorities</a><i class="fa fa-angle-right fa-lg category-icon"></i><i class="fa fa-circle-thin read-icon"></i></div><ul><li data-nav-id=https://psuastro528.github.io/lessons/week2/goals/ class=dd-item><div><a href=/lessons/week2/goals/>Learning goals
 </a><i class="fa fa-circle-thin read-icon"></i></div></li><li data-nav-id=https://psuastro528.github.io/lessons/week2/read/ class=dd-item><div><a href=/lessons/week2/read/>Readings
 </a><i class="fa fa-circle-thin read-icon"></i></div></li><li data-nav-id=https://psuastro528.github.io/lessons/week2/lab/ class=dd-item><div><a href=/lessons/week2/lab/>Exercises
@@ -80,7 +79,6 @@ Week 1: Development Tools</option>
 <option value=/lessons/week1/read/>-- Readings</option>
 <option value=/lessons/week1/course_overview/ selected>-- Course Overview (slides)</option>
 <option value=/lessons/week1/lab/>-- Exercises</option>
-<option value=/lessons/week1/discuss/>-- Discussion Topics Week 1</option>
 <option value=/lessons/week2/>-
 Week 2: Priorities</option>
 <option value=/lessons/week3/>-
@@ -229,23 +227,23 @@ ___
 For your first lab session, you'll:
 - Follow link for lab 1 from Canvas announcement
 - View _your_ new repository on [Github](https://github.com)
-- Login to where you'll run your Jupyter notebooks (with Julia kernel)
+- Login to where you'll run your code
 + [ICDS-ACI Portal](http://portal.aci.ics.psu.edu/)
 + [Install locally](https://julialang.org/downloads) (not for today)
 - _Clone_ your "repo" for the lab
-- Start working through ex1.ipynb, then ex2.ipynb
-There are [more detailed instructions](../resources) on the website.
+- Start Pluto notebook server
+- Start working through ex1.jl, then ex2.jl, ...
+There are [more detailed instructions](/tips) on the website.
 ___
 ### Commiting Changes
-- Need to UPDATE for Fall
 - _Commit_ your changes to local "repo"
 - Can commit Pluto notebooks directly as .jl files.
-- For Jupyter notebooks, first make a markdown version for human-readable version control
+- Later one when using Jupyter notebooks
++ First make a markdown version for human-readable version control
 + Use Weave's convert_doc to conver Jupyter notebook (ex1.ipynb) into Julia Markdown (ex1.jmd)
 + Add & commit both ex?.ipynb and ex?.jmd files to your local repo
 - Before signing off for the session, "push" your commits to GitHub
-- When done with lab, create a _pull request_ to merge your work into the _branch_ named "original".
-- See [more detailed instructions](lessons/week1/how-to-use-aci/#commit-push) &
+- See [more detailed instructions](/tips/submitting) &
   ask questions as you go
 ___</section># Questions?
 [Jump to start](#/0/0")</section></div></div><script async src=/revealjs/lib/js/head.min.js></script><script async src=/revealjs/js/reveal.js></script><script>function initSlides(){Reveal.initialize({embedded:true,controls:"true",center:"false",history:"false",progress:"true",transition:"slide",dependencies:[{src:'\/revealjs\/lib\/js\/classList.js"',condition:function(){return!document.body.classList;}},{src:'\/revealjs\/plugin\/markdown\/marked.js',condition:function(){return!!document.querySelector('[data-markdown]');}},{src:'\/revealjs\/plugin\/markdown\/markdown.js',condition:function(){return!!document.querySelector('[data-markdown]');}},{src:'\/revealjs\/plugin\/highlight\/highlight.js',async:true,callback:function(){hljs.initHighlightingOnLoad();}},{src:'\/revealjs\/plugin\/zoom-js\/zoom.js',async:true,condition:function(){return!!document.body.classList;}},{src:'\/revealjs\/plugin\/notes\/notes.js',async:true,condition:function(){return!!document.body.classList;}}]});}</script></div><li><a href=# onclick=slideFullScreen();>See it fullscreen</a></li><script type=text/javascript>var toto=document.getElementById('slideContent').innerHTML
