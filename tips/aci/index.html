@@ -1,4 +1,4 @@
-<!doctype html><html><head><title>PSU Astro 528</title><meta charset=utf-8><meta name=viewport content="width=device-width,initial-scale=1,maximum-scale=1,user-scalable=no"><meta name=revised content="2021-08-11T13:30:10 UTC"><title>Using ICDS-ACI/Roar :: PSU Astro 528</title><link rel="shortcut icon" href=/images/favicon.png type=image/x-icon><link href=/css/nucleus.css rel=stylesheet><link href=/css/font-awesome.min.css rel=stylesheet><link href=/css/featherlight.min.css rel=stylesheet><link href=/css/auto-complete.css rel=stylesheet><link href=/theme-flex/style.css rel=stylesheet><link href=/theme-flex/variant-blue.css rel=stylesheet><link rel=stylesheet href=/css/bootstrap.min.css><link rel=stylesheet href=/css/theme.css><script type=text/x-mathjax-config>
+<!doctype html><html><head><title>PSU Astro 528</title><meta charset=utf-8><meta name=viewport content="width=device-width,initial-scale=1,maximum-scale=1,user-scalable=no"><meta name=revised content="2021-08-11T13:34:05 UTC"><title>Using ICDS-ACI/Roar :: PSU Astro 528</title><link rel="shortcut icon" href=/images/favicon.png type=image/x-icon><link href=/css/nucleus.css rel=stylesheet><link href=/css/font-awesome.min.css rel=stylesheet><link href=/css/featherlight.min.css rel=stylesheet><link href=/css/auto-complete.css rel=stylesheet><link href=/theme-flex/style.css rel=stylesheet><link href=/theme-flex/variant-blue.css rel=stylesheet><link rel=stylesheet href=/css/bootstrap.min.css><link rel=stylesheet href=/css/theme.css><script type=text/x-mathjax-config>
     MathJax.Hub.Config({
     tex2jax: {inlineMath: [['$','$'], ['\\(','\\)']]}
     });
@@ -111,6 +111,17 @@ Weeks 13-15: Project Presentations</option>
 <option value=/project/>Class Project</option>
 <option value=/goals/>Learning Goals</option>
 <option value=/tips/>How-To's & Tips</option>
+<option value=/tips/aci/ selected>-
+Using ICDS-ACI/Roar</option>
+<option value=/tips/aci/create_account/>-- Creating Account on Roar</option>
+<option value=/tips/aci/initial_setup/>-- Initial Setup for Astro 528 on ACI</option>
+<option value=/tips/aci/pluto/>-- Pluto Notebooks on ACI</option>
+<option value=/tips/aci/jupyter/>-- Jupyter Notebooks on ACI</option>
+<option value=/tips/aci/remote_desktop/>-- ACI Remote Desktop</option>
+<option value=/tips/aci/julia_parallel_on_aci/>-- Fix for SSH keys on ACI</option>
+<option value=/tips/aci/jupyter_gpu_nodes/>-- Running Jupyter on a GPU node</option>
+<option value=/tips/submitting/>-
+Starting & Submitting Assignments</option>
 <option value=/resources/>Resources</option>
 <option value=/tools_used/>The Making of Astro528</option></select></center></div><div><div class=searchbox><input data-search-input id=search-by type=text placeholder=Search...></div></div><h1>Using ICDS-ACI/Roar</h1><h2 id=need-to-update-this-page-for-fall-2021>Need to update this page for Fall 2021</h2><h2 id=instructions-for-completing-labs-via-ics-aci-portal>Instructions for Completing Labs via ICS ACI Portal</h2><ol><li><a href=#setup-julia>Setup Julia kernel to work with ICS-ACI</a> (only needs to be done once per user)</li><li><a href=#start-jupyter>Start a Jupyter Notebook session on ACI</a></li></ol><hr><p></p><h3 id=setup-julia-kernel-to-work-with-acis-jupyter-notebook-server>Setup Julia kernel to work with ACI&rsquo;s Jupyter notebook server</h3><ul><li>Browse to portal.aci.ics.psu.edu</li><li>Login (if necessary)</li><li>Click <em>Interactive Apps</em> on top menu</li><li>Before using Julia on ACI for the first time<ul><li>Choose <em>ACI Interactive Desktop</em></li><li>Click <em>Launch</em></li><li>Wait while your job starts</li><li>Once the <em>Launch noVNC in new tab</em> button appears, click it</li></ul></li><li>Open a terminal via second button on bottom toolbar</li><li>Run the following code in the terminal</li></ul><div class=highlight><pre style=color:#272822;background-color:#fafafa;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-shell data-lang=shell>module load python/3.6.3-anaconda5.0.1
 <span style=color:#111>cd</span> work
